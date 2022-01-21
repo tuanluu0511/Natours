@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuanluu0511/Natours.git"
+  },
+  "author": "Vy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuanluu0511/Natours/issues"
+  },
+  "homepage": "https://github.com/tuanluu0511/Natours#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
