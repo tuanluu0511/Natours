@@ -1,5 +1,6 @@
 .DS_Store
 img/Thumbs.db
+.vscode/
 ### Sass ###
 .sass-cache/
 *.css.map
