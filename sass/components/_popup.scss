@@ -28,6 +28,10 @@
   &__left {
     width: 33.33333%;
     display: table-cell;
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
   &__right {
     width: 66.66667%;
@@ -55,6 +59,10 @@
     -ms-hyphens: auto; //microsoft
     -webkit-hyphens: auto; //webkit: chrome & safari
     hyphens: auto;
+
+    @include respond(phone) {
+      column-count: 1;
+    }
   }
 
   //Open states
