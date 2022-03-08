@@ -78,7 +78,7 @@
         ),
         url(../img/nat-5.jpg);
 
-      @media (max-width: 180em) {
+      @media only screen and (max-width: 180em) {
         background-image: linear-gradient(
             to right bottom,
             $color-secondary-light,
@@ -96,7 +96,7 @@
         ),
         url(../img/nat-6.jpg);
 
-      @media (max-width: 180em) {
+      @media only screen and (max-width: 180em) {
         background-image: linear-gradient(
             to right bottom,
             $color-primary-light,
@@ -113,7 +113,7 @@
         ),
         url(../img/nat-7.jpg);
 
-      @media (max-width: 180em) {
+      @media only screen and (max-width: 180em) {
         background-image: linear-gradient(
             to right bottom,
             $color-tertiary-light,
@@ -212,7 +212,8 @@
     font-weight: 100;
   }
 
-  @include respond(tab-port) {
+  //@include respond(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
