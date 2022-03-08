@@ -29,12 +29,6 @@
     height: 15rem;
     // background-color: orangered;
     float: left; //float only work when element have width and height
-    -webkit-shape-outside: circle(
-      50% at 50% 50%
-    ); //(radius at center point of circle)
-    //shape only work when element float around the circle
-
-    //clip-path to make element look like shape circle
 
     //to move float element, shouldn't use margin or padding
     transform: translateX(-3rem) skewX(12deg);
@@ -43,8 +37,11 @@
     border-radius: 50%;
 
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      //clip-path to make element look like shape circle
       -webkit-clip-path: circle(50% at 50% 50%);
       clip-path: circle(50% at 50% 50%);
+      //(radius at center point of circle)
+      //shape only work when element float around the circle
       -webkit-shape-outside: circle(50% at 50% 50%);
       shape-outside: circle(50% at 50% 50%);
       border-radius: none;
