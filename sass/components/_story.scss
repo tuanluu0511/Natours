@@ -27,19 +27,28 @@
   &__shape {
     width: 15rem;
     height: 15rem;
-    background-color: orangered;
+    // background-color: orangered;
     float: left; //float only work when element have width and height
     -webkit-shape-outside: circle(
       50% at 50% 50%
     ); //(radius at center point of circle)
     //shape only work when element float around the circle
-    shape-outside: circle(50% at 50% 50%);
+
     //clip-path to make element look like shape circle
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
+
     //to move float element, shouldn't use margin or padding
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      border-radius: none;
+    }
 
     @include respond(phone) {
       transform: translateX(-3rem) skewX(0);
