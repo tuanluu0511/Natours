@@ -663,12 +663,6 @@ body {
     @media only screen and (max-width: 37.5em) {
       .popup__text {
         column-count: 1; } }
-  .popup:target {
-    opacity: 1;
-    visibility: visible; }
-  .popup:target .popup__content {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1); }
   .popup__close:link, .popup__close:visited {
     color: #777;
     position: absolute;
